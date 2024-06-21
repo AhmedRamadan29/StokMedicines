@@ -65,4 +65,4 @@ Services:
 Contains the business logic for the application.
 Includes classes like DiscardedItemsStokServices, DrugServices, InvoiceServices, LettersService, MainStokServices, SubstokServices, and SupplierService.
 Running the Application
-To run the application, use the following command:
+To run the application, use the following command: mvn spring-boot:run
