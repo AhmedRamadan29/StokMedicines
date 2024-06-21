@@ -40,6 +40,6 @@ public class DrugServices {
                     )
             ).collect(Collectors.toList());
 
-    LamdaDrug.DrugById drugById = id ->{Optional< DrugE > drug = DrugRepository.findById(id);return drug.map(MapperALL::mapToDTO).orElse(null);};
+    LamdaDrug.DrugById drugById = id ->{Optional< DrugE > drug = DrugRepository.findById(id);return drug.map(MapperALL::mapToDTODrugDTO).orElse(null);};
 
 }
