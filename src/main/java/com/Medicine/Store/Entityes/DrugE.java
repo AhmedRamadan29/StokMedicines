@@ -4,6 +4,7 @@ import com.Medicine.Store.Enums.Stok;
 import com.Medicine.Store.Enums.UnitStok;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,6 +16,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class DrugE {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

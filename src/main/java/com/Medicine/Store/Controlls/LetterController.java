@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/Letters")
-public class Letter_controller {
+public class LetterController {
 
     @Autowired
     private LettersService lettersService;
