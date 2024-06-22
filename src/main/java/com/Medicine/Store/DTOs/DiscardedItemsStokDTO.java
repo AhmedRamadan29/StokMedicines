@@ -1,5 +1,4 @@
 package com.Medicine.Store.DTOs;
-
 import com.Medicine.Store.Enums.Stok;
 import com.Medicine.Store.Enums.TypeDamage;
 import com.Medicine.Store.Enums.UnitStok;
@@ -8,7 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
-
 import java.math.BigDecimal;
 
 @Component

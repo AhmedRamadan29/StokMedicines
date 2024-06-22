@@ -2,7 +2,7 @@ package com.Medicine.Store.Services;
 
 import com.Medicine.Store.Entityes.DrugE;
 import com.Medicine.Store.Lamadas.LamdaDrug;
-import com.Medicine.Store.Mapper.MapperALL;
+import com.Medicine.Store.Mapper.MapperDrug;
 import com.Medicine.Store.Repostorys.DrugRepository;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,13 +26,13 @@ public class DrugServices {
     LamdaDrug.getDrugs GetAll = () -> {
         List<DrugE> drugES = DrugRepository.findAll();
         return drugES.stream().
-                map(MapperALL::mapToDTODrugDTO)
+                map(MapperDrug::mapToDTODrugDTO)
                 .collect(Collectors.toList());
     };
 
     LamdaDrug.DrugById drugById = id -> {
         Optional<DrugE> drug = DrugRepository.findById(id);
-        return drug.map(MapperALL::mapToDTODrugDTO)
+        return drug.map(MapperDrug::mapToDTODrugDTO)
                 .orElse(null);
     };
 

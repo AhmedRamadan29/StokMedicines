@@ -2,7 +2,8 @@ package com.Medicine.Store.Services;
 
 import com.Medicine.Store.Entityes.InvoiceE;
 import com.Medicine.Store.Lamadas.LamdaInvoice;
-import com.Medicine.Store.Mapper.MapperALL;
+import com.Medicine.Store.Mapper.MapperDrug;
+import com.Medicine.Store.Mapper.MapperInvoice;
 import com.Medicine.Store.Repostorys.InvoiceRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,14 +25,14 @@ public class InvoiceServices {
     LamdaInvoice.GetAllInvoice getAllInvoice = () -> {
         List<InvoiceE> invoices = invoiceRepository.findAll();
         return invoices.stream()
-                .map(MapperALL::MapInvoice)
+                .map(MapperInvoice::MapInvoice)
                 .collect(Collectors.toList());
     };
 
     LamdaInvoice.GetInvoiceById getInvoiceById = id ->
     {
         Optional <InvoiceE> optional = invoiceRepository.findById(id);
-        return optional.map(MapperALL::MapInvoice).orElse(null);};
+        return optional.map(MapperInvoice::MapInvoice).orElse(null);};
 
 
 
