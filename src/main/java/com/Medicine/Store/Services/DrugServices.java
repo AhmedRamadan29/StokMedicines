@@ -1,4 +1,5 @@
 package com.Medicine.Store.Services;
+<<<<<<< HEAD
 import com.Medicine.Store.DTOs.DrugDTO;
 import com.Medicine.Store.Entityes.DrugE;
 import com.Medicine.Store.Lamadas.LamdaDrug;
@@ -42,4 +43,7 @@ public class DrugServices {
 
     LamdaDrug.DrugById drugById = id ->{Optional< DrugE > drug = DrugRepository.findById(id);return drug.map(MapperALL::mapToDTODrugDTO).orElse(null);};
 
+=======
+public class DrugServices {
+>>>>>>> 7f047230a0db5e515fc27c2c7a6c47c33d458992
 }
