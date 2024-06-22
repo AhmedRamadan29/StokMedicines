@@ -26,6 +26,9 @@ public class LettersService {
     public LamdaLetters.FindByLetter findLocationByLetter = letter ->
             // Find a letter by its content and map it to a DTO containing only the location
             lettersRepo.findByLetter(letter).map(l -> new LettersDTO(l.getSockLocation()));
+
+
+
     public LamdaLetters.updateAllLetter updateAllLetter = (letter, sotkLocation, id) ->
             lettersRepo.updateLetter(letter, sotkLocation, id);
 

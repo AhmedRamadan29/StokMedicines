@@ -1,10 +1,15 @@
 package com.Medicine.Store.Mapper;
-import com.Medicine.Store.DTOs.DrugDTO;
-import com.Medicine.Store.Entityes.DrugE;
 
+import com.Medicine.Store.DTOs.DrugDTO;
+import com.Medicine.Store.DTOs.InvoiceDTO;
+import com.Medicine.Store.Entityes.DrugE;
+import com.Medicine.Store.Entityes.InvoiceE;
+import lombok.Builder;
+
+@Builder
 public class MapperALL {
 
-    public static DrugDTO mapToDTO(DrugE drug) {
+    public static DrugDTO mapToDTODrugDTO(DrugE drug) {
         if (drug == null) {
             return null;
         }
@@ -26,7 +31,18 @@ public class MapperALL {
                 .build();
     }
 
-    public static DrugE mapToEntity(DrugDTO drugDTO) {
+    public static InvoiceDTO MapInvoice(InvoiceE invoiceE) {
+        return InvoiceDTO.builder().invoiceId(invoiceE.getInvoiceId()).
+                invoiceNumber(invoiceE.getInvoiceNumber()).productName(invoiceE.getProductName())
+                .totalProduct(invoiceE.getTotalProduct()).unit(invoiceE.getUnit()).startDate(invoiceE.getStartDate())
+                .endDate(invoiceE.getEndDate()).totalCost(invoiceE.getTotalCost()).supplierName(invoiceE.getSupplierName())
+                .prePrice(invoiceE.getPrePrice()).discount(invoiceE.getDiscount()).postPrice(invoiceE.getPostPrice()).
+                paymentType(invoiceE.getPaymentType()).litter(invoiceE.getLitter()).stok(invoiceE.getStok())
+                .build();
+
+    }
+/*
+    public static DrugE mapToEntityDrugE(DrugDTO drugDTO) {
         if (drugDTO == null) {
             return null;
         }
@@ -47,4 +63,5 @@ public class MapperALL {
                 .stok(drugDTO.getStok())
                 .build();
     }
+*/
 }

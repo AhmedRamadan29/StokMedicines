@@ -33,4 +33,6 @@ public class InvoiceDTO {
     private PaymentType paymentType;
     private String litter;
     private Stok stok;
+
+
 }

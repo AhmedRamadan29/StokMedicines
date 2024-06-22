@@ -29,6 +29,7 @@ public class DrugDTO {
     private String letter;
     private Date entryDate;
     private Stok stok;
+
     public DrugDTO(Integer id, String productName, Date startDate, Date endDate, String expiryYet, BigDecimal productCount,
                    UnitStok unitStok, String supplierName, BigDecimal priceAfter, BigDecimal discount, BigDecimal priceBefore,
                    String letter, Date entryDate, Stok stok) {
@@ -47,8 +48,6 @@ public class DrugDTO {
         this.entryDate = entryDate;
         this.stok = stok;
     }
-
-
 
 
 }
