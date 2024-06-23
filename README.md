@@ -2,6 +2,8 @@
 Project Overview
 The Store Application is a pharmaceutical inventory management system. It handles various operations such as managing drugs, invoices, suppliers, and stock levels, including both main stock and sub-stock. The application also tracks discarded items.
 
+![Module](https://github.com/AhmedRamadan29/StokMedicines/assets/137803511/bc8e32ac-a78e-401f-bc51-181ab92a9d19)
+
 Database Schema
 Database Name: database_mi
 
@@ -66,3 +68,10 @@ Contains the business logic for the application.
 Includes classes like DiscardedItemsStokServices, DrugServices, InvoiceServices, LettersService, MainStokServices, SubstokServices, and SupplierService.
 Running the Application
 To run the application, use the following command: mvn spring-boot:run
+
+
+
+
+
+
+
