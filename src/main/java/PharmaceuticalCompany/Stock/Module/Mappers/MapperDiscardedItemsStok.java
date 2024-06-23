@@ -18,7 +18,7 @@ public class MapperDiscardedItemsStok {
                 .priceBefore(discardedItemsStokEntity.getPriceBefore())
                 .discount(discardedItemsStokEntity.getDiscount())
                 .priceAfter(discardedItemsStokEntity.getPriceAfter())
-
+                .litter(discardedItemsStokEntity.getLitter())
                 .storeType(discardedItemsStokEntity.getStoreType())
                 .employeeName(discardedItemsStokEntity.getEmployeeName())
                 .employeeId(discardedItemsStokEntity.getEmployeeId())
