@@ -78,7 +78,7 @@ set_java_home() {
   fi
 }
 
-# hash com.Medicine.Store.PublicClass.string like Java String::hashCode
+# hash PublicClass.PharmaceuticalCompany.Stock.Module.string like Java String::hashCode
 hash_string() {
   str="${1:-}" h=0
   while [ -n "$str" ]; do

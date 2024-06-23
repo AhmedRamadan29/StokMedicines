@@ -15,7 +15,7 @@ public class DrugController {
     private DrugServices drugServices;
     @GetMapping("/GetAllDrug")
     private ResponseEntity <List < DrugDTO>> GetAll () {
-        return  ResponseEntity.ok(drugServices.getGetAll(DrugDTO));
+        return  ResponseEntity.ok(drugServices.getGetAll().getAllDrugs());
 
     }
 
